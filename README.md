@@ -1,144 +1,87 @@
 # Iris Flower Classification
 
-## Project Overview
+## About the Project
 
-The objective of this project is to build a machine learning classification model that predicts the species of an Iris flower based on its sepal and petal measurements.
+This project uses machine learning to classify Iris flowers into different species based on their measurements.
 
-The project uses the Iris dataset containing measurements of three Iris species:
+The Iris dataset contains measurements such as sepal length, sepal width, petal length, and petal width. These measurements are used to predict the flower species.
 
-- Iris-setosa
-- Iris-versicolor
-- Iris-virginica
+## Objectives
 
-## Objective
-
-The main objectives of this project are:
-
-- Analyze the Iris flower dataset.
-- Check the dataset for missing values.
-- Visualize the distribution and relationships between flower measurements.
-- Train a machine learning classification model.
-- Evaluate the model using accuracy and classification metrics.
-- Predict the species of a new Iris flower.
+- Understand the Iris flower dataset.
+- Explore the flower measurements.
+- Build a machine learning classification model.
+- Predict the species of Iris flowers.
+- Evaluate the performance of the model using test data.
+- Understand the basic concept of classification.
 
 ## Dataset
 
-The dataset contains **150 flower samples** and the following columns:
+The project uses the Iris dataset containing three flower species:
 
-| Column | Description |
-|---|---|
-| Id | Unique identifier |
-| SepalLengthCm | Sepal length in centimeters |
-| SepalWidthCm | Sepal width in centimeters |
-| PetalLengthCm | Petal length in centimeters |
-| PetalWidthCm | Petal width in centimeters |
-| Species | Iris flower species |
+- Iris Setosa
+- Iris Versicolor
+- Iris Virginica
 
-The dataset contains 50 samples of each species.
-
-No missing values were found in the dataset.
-
-## Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-
-## Machine Learning Model
-
-The project uses the **K-Nearest Neighbors (KNN)** classification algorithm.
-
-The four flower measurements used as input features are:
+The dataset contains the following measurements:
 
 - Sepal Length
 - Sepal Width
 - Petal Length
 - Petal Width
 
-The `Id` column is not used for model training because it is only an identifier.
+## Technologies Used
 
-The dataset was divided into:
+- Python
+- Pandas
+- Matplotlib
+- Scikit-learn
 
-- **80% training data**
-- **20% testing data**
+## Steps Performed
 
-## Data Visualization
+### 1. Data Loading
 
-The project includes the following visualizations:
+The Iris dataset was loaded using Python and Pandas.
 
-1. Distribution of Iris Species
-2. Sepal Length vs Sepal Width
-3. Petal Length vs Petal Width
-4. Confusion Matrix
+### 2. Data Exploration
 
-The generated graphs are available in the `graphs` folder.
+The dataset was explored to understand the flower measurements and different species.
 
-## Model Performance
+### 3. Data Visualization
 
-The KNN model achieved:
+Graphs were created to compare the sepal and petal measurements and understand the distribution of the different species.
 
-**Test Accuracy: 100%**
+### 4. Model Building
 
-The classification report showed 1.00 precision, recall, and F1-score for all three Iris species on the test set.
+A machine learning classification model was trained using the Iris flower measurements.
 
-The model correctly classified all 30 test samples in the selected test split.
+### 5. Model Evaluation
 
-## New Flower Prediction
+The model was tested using test data and its performance was evaluated using accuracy and a confusion matrix.
 
-The trained model was also tested with a new set of flower measurements:
+## Visualizations
 
-- Sepal Length: 5.1 cm
-- Sepal Width: 3.5 cm
-- Petal Length: 1.4 cm
-- Petal Width: 0.2 cm
+The project contains graphs for:
 
-The model predicted the species as:
-
-**Iris-setosa**
+- Species distribution
+- Sepal comparison
+- Petal comparison
+- Confusion matrix
 
 ## Project Structure
 
 ```text
-CodeAlpha_Iris_Flower_Classification/
+Iris_Flower_Classification/
+│
+├── graphs/
+│   ├── confusion_matrix.png
+│   ├── petal_comparison.png
+│   ├── sepal_comparison.png
+│   └── species_distribution.png
 │
 ├── Iris.csv
 ├── iris_classification.py
 ├── requirements.txt
-├── README.md
-│
-└── graphs/
-    ├── species_distribution.png
-    ├── sepal_comparison.png
-    ├── petal_comparison.png
-    └── confusion_matrix.png
-```
-
-## How to Run the Project
-
-### 1. Clone the repository
-
-```bash
-git clone <your-github-repository-url>
-```
-
-### 2. Open the project folder
-
-```bash
-cd CodeAlpha_Iris_Flower_Classification
-```
-
-### 3. Install the required libraries
-
-```bash
-py -m pip install -r requirements.txt
-```
-
-### 4. Run the project
-
-```bash
-py iris_classification.py
+└── README.md
 ```
 
